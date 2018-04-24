@@ -1,33 +1,6 @@
-/*
-  Google Fonts Raleway
-  @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-  https://google-webfonts-helper.herokuapp.com/fonts
-*/
-/* raleway-regular - latin */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/raleway-v12-latin-regular.eot");
-  /* IE9 Compat Modes */
-  src: local("Raleway"), local("Raleway-Regular"), url("../fonts/raleway-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v12-latin-regular.woff2") format("woff2"), url("../fonts/raleway-v12-latin-regular.woff") format("woff"), url("../fonts/raleway-v12-latin-regular.ttf") format("truetype"), url("../fonts/raleway-v12-latin-regular.svg#Raleway") format("svg");
-  /* Legacy iOS */
-}
-
-/* raleway-600 - latin */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/raleway-v12-latin-600.eot");
-  /* IE9 Compat Modes */
-  src: local("Raleway SemiBold"), local("Raleway-SemiBold"), url("../fonts/raleway-v12-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v12-latin-600.woff2") format("woff2"), url("../fonts/raleway-v12-latin-600.woff") format("woff"), url("../fonts/raleway-v12-latin-600.ttf") format("truetype"), url("../fonts/raleway-v12-latin-600.svg#Raleway") format("svg");
-  /* Legacy iOS */
-}
-
-html, body {
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);html, body {
   background: #2A3F54;
-  font-family: Raleway, Helvetica, Arial, sans-serif !important;
+  font-family: "Raleway", sans-serif;
   font-weight: 100;
   height: 100vh;
   margin: 0;

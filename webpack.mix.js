@@ -14,22 +14,25 @@ mix.js('resources/assets/js/app.js', public_js).
     options({processCssUrls: false})
 ;
 
-/* Gentelella Javascripts and Styles*/
+/* Gentelella JavaScripts and Styles*/
 
 let gentelella_home = 'node_modules/gentelella/';
 let gentelella_vendor = gentelella_home + '/vendors/';
 
 /*
- *  Copy dependent Javascripts and CSSs
+ *  Copy dependent JavaScripts and CSSs
  */
-mix
-// gentelella
-    .copy(gentelella_home + 'build/css/custom.css',
-        public_css + 'gentelella-custom.css')
-    .copy(gentelella_home + 'build/js/custom.js',
-        public_js + 'gentelella-custom.js')
-// bootstrap
-    .copy(gentelella_vendor + 'bootstrap/dist/css/bootstrap.css',
+mix.
+    // gentelella
+    copy(gentelella_home + 'build/css/custom.css',
+        public_css + 'gentelella-custom.css').
+    copy(gentelella_home + 'build/js/custom.js',
+        public_js + 'gentelella-custom.js').
+    // jQuery
+    copy(gentelella_vendor + 'jquery/dist/jquery.min.js',
+        public_js + 'jquery.min.js').
+    // bootstrap
+    copy(gentelella_vendor + 'bootstrap/dist/css/bootstrap.css',
         public_css + 'bootstrap.css').
     copy(gentelella_vendor + 'bootstrap/dist/css/bootstrap.css.map',
         public_css + 'bootstrap.css.map').
@@ -56,9 +59,8 @@ mix
         public_css + 'select2.css').
     copy(gentelella_vendor + 'select2/dist/js/select2.full.js',
         public_js + 'select2.full.js').
-    // jQuery
-    copy(gentelella_vendor + 'jquery/dist/jquery.min.js',
-        public_js + 'jquery.js').
+    copy(gentelella_vendor + 'moment/moment.js',
+        public_js + 'moment.js').
     copy(gentelella_vendor + 'bootstrap-daterangepicker/daterangepicker.js',
         public_js + 'bootstrap-daterangepicker.js').
     copy(gentelella_vendor + 'chart.js/dist/Chart.js',

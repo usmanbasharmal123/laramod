@@ -10,6 +10,7 @@
     <title>{{ $page_title }}</title>
 
     <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,600" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     @yield('extra_styles')
@@ -21,11 +22,10 @@
 @yield('body_content')
 
 <!-- Scripts -->
-<script src="{{ asset('js/jquery.js') }}"></script>
+<script src="{{ asset('js/jquery.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap.js') }}"></script>
 @yield('extra_scripts')
 <script src="{{ asset('js/gentelella-custom.js') }}"></script>
 <script src="{{ asset('js/app.js') }}"></script>
-
 </body>
 </html>

@@ -1,6 +1,6 @@
 # LaraMod - Modularised Laravel
 
-[![Build Status](https://img.shields.io/travis/htr3n/LaraMod/master.svg)](https://travis-ci.org/htr3n/LaraMod)
+[![Build Status](https://img.shields.io/travis/htr3n/laramod/master.svg)](https://travis-ci.org/htr3n/laramod)
 [![Laravel 5](https://img.shields.io/badge/Laravel-5-green.svg)](https://laravel.com)
 [![PHP](https://img.shields.io/packagist/php-v/laravel/laravel.svg)](https://php.net)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -111,13 +111,19 @@ The PSR-4 autoloading of classes should be updated with the paths and namespaces
 
 * Stuffs for testing are still in `tests`.
 * Database seeders are still in `database/seeds`.
-* Integration with Bootstrap and [Gentelella Admin](https://github.com/puikinsh/gentelella) ;)
-* I have been developing some model and controller generators that better suit the modularisation as the original generators provide limited options for generated paths and namespaces and many others. 
-* I have transformed the Laravel's authentication part into a module, namely, `Login`, and updated relevant classes and traits with new modularised paths to views and controllers. 
+* For smoother integration [Gentelella Admin](https://github.com/puikinsh/gentelella) (that includes Bootstrap and jQuery), LaraMod is based on no scafffolding (i.e. `php artisan preset none`)
+* Some extra generators have been developed for handling modules as the original generators provide limited options for generated paths and namespaces and many others.
+* Original Laravel's authentication part have been transformed into a module, namely, `Login`, and updated with relevant classes and traits along with modularised paths to views and controllers. 
 
 ### Extras
 
-`LaraMod` also comes with an integration with Twitter's [Bootstrap 3](http://getbootstrap.com) and the beautiful theme  [Gentelella Admin](https://github.com/puikinsh/gentelella). `LaraMod` might be used as a starting point for developing a dashboard application. Instead of using Laravel's scafffolding [Bootstrap](https://laravel.com/docs/frontend) and [jQuery](http://getbootstrap.com), I thought it would be wiser to use the ones enclosed with `gentelella` becase they have been already tested together.
+`LaraMod` also comes with other additions. Firstly, it is the excellent [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar) as per guidance:
+
+```sh
+composer require barryvdh/laravel-debugbar --dev
+```  
+
+Secondly, there is an integration with Twitter's [Bootstrap 3](http://getbootstrap.com) and the beautiful theme  [Gentelella Admin](https://github.com/puikinsh/gentelella). `LaraMod` might be used as a starting point for developing a dashboard application. Instead of using Laravel's scafffolding [Bootstrap](https://laravel.com/docs/frontend) and [jQuery](http://getbootstrap.com), I thought it would be wiser to use the ones enclosed with `gentelella` becase they have been already tested together.
 
 *  `webpack.mix.js` defines rules for transforming and copying relevant scripts and styles. 
 

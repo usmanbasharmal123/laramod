@@ -27,7 +27,7 @@
 <script src="{{ asset('js/jqvmap.js') }}"></script>
 <script src="{{ asset('js/jqvmap.world.js') }}"></script>
 <script src="{{ asset('js/jqvmap.sampledata.js') }}"></script>
-<script src="{{ asset('js/bootstrap-daterangepicker-moment.js') }}"></script>
+<script src="{{ asset('js/moment.js') }}"></script>
 <script src="{{ asset('js/bootstrap-daterangepicker.js') }}"></script>
 @endsection
 
