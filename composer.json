@@ -23,7 +23,12 @@
             "database/factories"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+            "Core\\": "modules/Core/",
+            "Dashboard\\": "modules/Dashboard/",
+            "Login\\": "modules/Login/",
+            "User\\": "modules/User/",
+            "Laramod\\": "modules/"      
         }
     },
     "autoload-dev": {

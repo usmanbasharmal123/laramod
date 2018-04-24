@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'LaraMod'),
 
     /*
     |--------------------------------------------------------------------------
@@ -160,6 +160,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Modularisation Service Provider
+         */
+        \Laramod\ModulesServiceProvider::class,
+        
     ],
 
     /*
