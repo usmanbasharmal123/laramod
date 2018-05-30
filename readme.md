@@ -111,19 +111,19 @@ The PSR-4 autoloading of classes should be updated with the paths and namespaces
 
 * Stuffs for testing are still in `tests`.
 * Database seeders are still in `database/seeds`.
-* For smoother integration [Gentelella Admin](https://github.com/puikinsh/gentelella) (that includes Bootstrap and jQuery), LaraMod is based on no scafffolding (i.e. `php artisan preset none`)
-* Some extra generators have been developed for handling modules as the original generators provide limited options for generated paths and namespaces and many others.
-* Original Laravel's authentication part have been transformed into a module, namely, `Login`, and updated with relevant classes and traits along with modularised paths to views and controllers. 
+* For a smoother integration and better compability of [Gentelella Admin](https://github.com/puikinsh/gentelella) (that includes Bootstrap and jQuery), LaraMod does not use any scafffolding (i.e. `php artisan preset none`)
+* I developed some extra generators for handling modules as the original generators provide limited options for generated paths and namespaces and many others.
+* To showcase the modularisation, I transformed the original Laravel's authentication part into a module, namely, `Login`, and updated relevant classes and traits, views and controllers. 
 
 ### Extras
 
-`LaraMod` also comes with other additions. Firstly, it is the excellent [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar) as per guidance:
+`LaraMod` also comes with other additions. I love the excellent [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar) for debugging and would like to have it in `LaraMod`:
 
 ```sh
 composer require barryvdh/laravel-debugbar --dev
 ```  
 
-Secondly, there is an integration with Twitter's [Bootstrap 3](http://getbootstrap.com) and the beautiful theme  [Gentelella Admin](https://github.com/puikinsh/gentelella). `LaraMod` might be used as a starting point for developing a dashboard application. Instead of using Laravel's scafffolding [Bootstrap](https://laravel.com/docs/frontend) and [jQuery](http://getbootstrap.com), I thought it would be wiser to use the ones enclosed with `gentelella` becase they have been already tested together.
+Besides, `LaraMod` embraces Twitter's [Bootstrap 3](http://getbootstrap.com) and [Gentelella Admin](https://github.com/puikinsh/gentelella). `LaraMod` might be used as a starting point for developing a dashboard application. Instead of using Laravel's scafffolding [Bootstrap](https://laravel.com/docs/frontend) and [jQuery](http://getbootstrap.com), I thought it would be wiser to use the third party plugins enclosed with `Gentelella` because they have been already tested working together.
 
 *  `webpack.mix.js` defines rules for transforming and copying relevant scripts and styles. 
 
