@@ -3,6 +3,8 @@
 [![Build Status](https://img.shields.io/travis/htr3n/laramod/master.svg)](https://travis-ci.org/htr3n/laramod)
 [![Laravel 5](https://img.shields.io/badge/Laravel-5-green.svg)](https://laravel.com)
 [![PHP](https://img.shields.io/packagist/php-v/laravel/laravel.svg)](https://php.net)
+[![Dependency Status](https://david-dm.org/htr3n/laramod.svg?theme=shields.io)](https://david-dm.org/htr3n/laramod)
+[![devDependency Status](https://david-dm.org/htr3n/laramod/dev-status.svg?theme=shields.io)](https://david-dm.org/htr3n/laramod#info=devDependencies)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 **LaraMod** is another approach to a convention-based modularisation of a [Laravel](https://laravel.com)-based project. The idea stems from my struggle to organise a Laravel-based project such that I can work effectively and focus better on individual modules such as `UserManagement`, `Authentication`, `Dashboard`, etc. whilst keeping the Laravel code base as intact as possible (this would be convenient for upgrading Laravel) and keeping my code base separate from original Laravel's.
@@ -121,7 +123,7 @@ The PSR-4 autoloading of classes should be updated with the paths and namespaces
 
 ```sh
 composer require barryvdh/laravel-debugbar --dev
-```  
+```
 
 Besides, `LaraMod` embraces Twitter's [Bootstrap 3](http://getbootstrap.com) and [Gentelella Admin](https://github.com/puikinsh/gentelella). `LaraMod` might be used as a starting point for developing a dashboard application. Instead of using Laravel's scafffolding [Bootstrap](https://laravel.com/docs/frontend) and [jQuery](http://getbootstrap.com), I thought it would be wiser to use the third party plugins enclosed with `Gentelella` because they have been already tested working together.
 
