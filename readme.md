@@ -4,7 +4,8 @@
 [![Laravel 5](https://img.shields.io/badge/Laravel-5-green.svg)](https://laravel.com)
 [![PHP](https://img.shields.io/packagist/php-v/laravel/laravel.svg)](https://php.net)
 [![Dependency Status](https://david-dm.org/htr3n/laramod.svg?theme=shields.io)](https://david-dm.org/htr3n/laramod)
-[![devDependency Status](https://david-dm.org/htr3n/laramod/dev-status.svg?theme=shields.io)](https://david-dm.org/htr3n/laramod#info=devDependencies)
+[![devDependency Status](https://david-dm.org/htr3n/laramod/dev-status.svg?theme=shields.io)](https://david-dm.org/htr3n/laramod?type=dev)
+[![Known Vulnerabilities](https://snyk.io/test/github/htr3n/laramod/badge.svg?targetFile=package.json)](https://snyk.io/test/github/htr3n/laramod?targetFile=package.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 **LaraMod** is another approach to a convention-based modularisation of a [Laravel](https://laravel.com)-based project. The idea stems from my struggle to organise a Laravel-based project such that I can work effectively and focus better on individual modules such as `UserManagement`, `Authentication`, `Dashboard`, etc. whilst keeping the Laravel code base as intact as possible (this would be convenient for upgrading Laravel) and keeping my code base separate from original Laravel's.
