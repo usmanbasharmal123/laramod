@@ -20,7 +20,7 @@ For the starting point, checking out the **LaraMod** git repos
 git clone https://github.com/htr3n/laramod.git
 ```
 
-or using `composer create-project` 
+or using `composer create-project`
 
 ```sh
 composer create-project htr3n/laramod your-project-name
@@ -30,15 +30,39 @@ Then, get into the newly created folder and issue the following command
 
 ```sh
 composer install
-npm install 
+npm install
 npm run dev
 ```
 
  to retrieve and compile necessary packages for your development environment.
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[British Software Development](https://www.britishsoftware.co)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- [UserInsights](https://userinsights.com)
+- [Fragrantica](https://www.fragrantica.com)
+- [SOFTonSOFA](https://softonsofa.com/)
+- [User10](https://user10.com)
+- [Soumettre.fr](https://soumettre.fr/)
+- [CodeBrisk](https://codebrisk.com)
+- [1Forge](https://1forge.com)
+- [TECPRESSO](https://tecpresso.co.jp/)
+- [Runtime Converter](http://runtimeconverter.com/)
+- [WebL'Agence](https://weblagence.com/)
+- [Invoice Ninja](https://www.invoiceninja.com)
+- [iMi digital](https://www.imi-digital.de/)
+- [Earthlink](https://www.earthlink.ro/)
+- [Steadfast Collective](https://steadfastcollective.com/)
+- [We Are The Robots Inc.](https://watr.mx/)
+- [Understand.io](https://www.understand.io/)
 
 ### The Conventional Module Structure
 
-The convention of project structure modules in `LaraMod` is rather straightforward, or naive. The additional folder `modules` will be the base of the modules. At this release, only one module layer is supported. 
+The convention of project structure modules in `LaraMod` is rather straightforward, or naive. The additional folder `modules` will be the base of the modules. At this release, only one module layer is supported.
 
 ```
 Authentication
@@ -106,9 +130,9 @@ The PSR-4 autoloading of classes should be updated with the paths and namespaces
 
 ### Access to Module Parts
 
-- Module's controllers, migrations and other classes are mostly PSR-4 autoloaded. Thus, they can be accessed straightforwardly.  
+- Module's controllers, migrations and other classes are mostly PSR-4 autoloaded. Thus, they can be accessed straightforwardly.
 - Access to views and international parts (`Lang`) of each module requires a slightly different syntax, for instance `ModuleA::blade_view_name` or `ModuleA::messages.title`. If the `ModuleA::` part is missing, Laravel will look for views and language files in the default places.
-- The included example views are well organised into substructures of a typical Web site / dashboard, such as `nav_top`, `nav_left`. 
+- The included example views are well organised into substructures of a typical Web site / dashboard, such as `nav_top`, `nav_left`.
 
 ### Caveats
 
@@ -116,7 +140,7 @@ The PSR-4 autoloading of classes should be updated with the paths and namespaces
 * Database seeders are still in `database/seeds`.
 * For a smoother integration and better compability of [Gentelella Admin](https://github.com/puikinsh/gentelella) (that includes Bootstrap and jQuery), LaraMod does not use any scafffolding (i.e. `php artisan preset none`)
 * I developed some extra generators for handling modules as the original generators provide limited options for generated paths and namespaces and many others.
-* To showcase the modularisation, I transformed the original Laravel's authentication part into a module, namely, `Login`, and updated relevant classes and traits, views and controllers. 
+* To showcase the modularisation, I transformed the original Laravel's authentication part into a module, namely, `Login`, and updated relevant classes and traits, views and controllers.
 
 ### Extras
 
@@ -128,7 +152,7 @@ composer require barryvdh/laravel-debugbar --dev
 
 Besides, `LaraMod` embraces Twitter's [Bootstrap 3](http://getbootstrap.com) and [Gentelella Admin](https://github.com/puikinsh/gentelella). `LaraMod` might be used as a starting point for developing a dashboard application. Instead of using Laravel's scafffolding [Bootstrap](https://laravel.com/docs/frontend) and [jQuery](http://getbootstrap.com), I thought it would be wiser to use the third party plugins enclosed with `Gentelella` because they have been already tested working together.
 
-*  `webpack.mix.js` defines rules for transforming and copying relevant scripts and styles. 
+*  `webpack.mix.js` defines rules for transforming and copying relevant scripts and styles.
 
 This is how the Web application looks.
 

@@ -1,12 +1,25 @@
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
-let public_js = 'public/js/';
-let public_css = 'public/css/';
-let resource_sass = 'resources/assets/sass/';
+/*
+ |--------------------------------------------------------------------------
+ | Mix Asset Management
+ |--------------------------------------------------------------------------
+ |
+ | Mix provides a clean, fluent API for defining some Webpack build steps
+ | for your Laravel application. By default, we are compiling the Sass
+ | file for the application as well as bundling up all the JS files.
+ |
+ */
 
-mix.js('resources/assets/js/app.js', public_js).
-    sass(resource_sass + 'app.scss', public_css).
-    sass(resource_sass + 'home.scss', public_css).
+mix.js('resources/js/app.js', 'public/js')
+   .sass('resources/sass/app.scss', 'public/css');
+
+const public_js = 'public/js/';
+const public_css = 'public/css/';
+const resource_sass = 'resources/assets/sass/';
+
+/* Keep the original Laravel code intact and add Laramod code */
+mix.sass(resource_sass + 'home.scss', public_css).
     options({processCssUrls: false}).
     sass(resource_sass + 'login.scss', public_css).
     options({processCssUrls: false}).
@@ -16,8 +29,8 @@ mix.js('resources/assets/js/app.js', public_js).
 
 /* Gentelella JavaScripts and Styles*/
 
-let gentelella_home = 'node_modules/gentelella/';
-let gentelella_vendor = gentelella_home + '/vendors/';
+const gentelella_home = 'node_modules/gentelella/';
+const gentelella_vendor = gentelella_home + '/vendors/';
 
 /*
  *  Copy dependent JavaScripts and CSSs

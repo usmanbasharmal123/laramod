@@ -11,9 +11,9 @@
     },
     "devDependencies": {
         "axios": "^0.18",
-        "cross-env": "^5.2.0",
+        "cross-env": "^5.2",
         "gentelella": "github:puikinsh/gentelella#master",
         "laravel-mix": "github:JeffreyWay/laravel-mix#master",
-        "lodash": "^4.17.11"
+        "lodash": "^4.17"
     }
 }
