@@ -12,21 +12,15 @@
 
 There are some other decent attempts on modalurasing Laravel projects for example [here](https://nicolaswidart.com/blog/writing-modular-applications-with-laravel-modules), [here](https://github.com/caffeinated/modules) or [here](http://kamranahmed.info/blog/2015/12/03/creating-a-modular-application-in-laravel). Being inspired and learning from these, I start a simple project on my own to dig a bit deeper into Laravel 5. Here I will mainly emphasize the modularisation part, the rest inherits from Laravel 5, so please refer to [Laravel's docs](https://laravel.com/docs).
 
-## Installation
+## Quick Start
 
-For the starting point, checking out the **LaraMod** git repos
+For the starting point, cloning `laramod` git repos
 
 ```sh
 git clone https://github.com/htr3n/laramod.git
 ```
 
-or using `composer create-project`
-
-```sh
-composer create-project htr3n/laramod your-project-name
-```
-
-Then, get into the newly created folder and issue the following command
+Then, go into the newly created folder and execute the following commands
 
 ```sh
 composer install
@@ -35,9 +29,20 @@ npm run dev
 ```
  to retrieve and compile necessary packages for your development environment.
 
-### The Conventional Module Structure
+In case you want to test whether LaraMod is working, you can start the local development server via `php artisan` (note that we must set up the `.env` beforehand, for instance, copying the existing `.env.testing`, otherwise Laravel/Laramod will fail to run properly  with the error `500`).
 
-The convention of project structure modules in `LaraMod` is rather straightforward, or naive. The additional folder `modules` will be the base of the modules. At this release, only one module layer is supported.
+```sh
+cp .env.testing .env
+php artisan serve
+```
+
+We should see a working web site at <http://127.0.0.1:8000>.
+
+## Technical Details
+
+### Conventional Module Structure
+
+The convention of project structure modules in `LaraMod` is rather straightforward, but naive. The additional folder `modules` will be the base of the modules. At this release, only one module layer is supported.
 
 ```
 Authentication
