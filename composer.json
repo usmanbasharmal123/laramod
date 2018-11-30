@@ -1,10 +1,11 @@
 {
-    "name": "laravel/laravel",
+    "name": "htr3n/laramod",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "LaraMod -- Modularised Laravel",
     "keywords": [
         "framework",
-        "laravel"
+        "laravel",
+        "laramod"
     ],
     "license": "MIT",
     "require": {
@@ -33,9 +34,6 @@
         }
     },
     "autoload": {
-        "psr-4": {
-            "App\\": "app/"
-        },
         "classmap": [
             "database/seeds",
             "database/factories"
