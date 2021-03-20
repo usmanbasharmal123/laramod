@@ -67,6 +67,7 @@ mix.
         public_css + 'bootstrap-progressbar.css').
     copy(gentelella_vendor + 'bootstrap-progressbar/bootstrap-progressbar.js',
         public_js + 'bootstrap-progressbar.js').
+
     // select2
     copy(gentelella_vendor + 'select2/dist/css/select2.css',
         public_css + 'select2.css').
@@ -74,6 +75,8 @@ mix.
         public_js + 'select2.full.js').
     copy(gentelella_vendor + 'moment/moment.js',
         public_js + 'moment.js').
+        copy(gentelella_vendor + 'bootstrap-daterangepicker/daterangepicker.css',
+        public_css + 'daterangepicker.css').
     copy(gentelella_vendor + 'bootstrap-daterangepicker/daterangepicker.js',
         public_js + 'bootstrap-daterangepicker.js').
     copy(gentelella_vendor + 'chart.js/dist/Chart.js',
